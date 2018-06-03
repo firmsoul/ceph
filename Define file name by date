@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#read -p "Please input your GF name: " -t 30 gf_name
+#read -p "Please input your name: " -t 30 your_name
+#gf_name=${gf_name:-"\"right hand\""}
+#echo -e "${your_name}'s girl friend is ${gf_name}"
+
+read -p "Please input your file name: " -t 30 filename
+filename=${filename:-"filename"}
+date2=$(date --date='2 days ago' +%Y%m%d)
+date1=$(date --date='1 days ago' +%Y%m%d)
+date=$(date  +%Y%m%d)
+
+touch ${filename}${date2}
+touch ${filename}${date1}
+touch ${filename}${date}
